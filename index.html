@@ -31,8 +31,15 @@
             <button class="btn-new" onclick="newGame();" ><i class="ion-ios-plus-outline"></i>New game</button>
             <button class="btn-roll" onclick="rollDice();"><i class="ion-ios-loop"></i>Roll dice</button>
             <button class="btn-hold" onclick="Hold();"><i class="ion-ios-download-outline"></i>Hold</button>
+
+            <img src="dice-5.png" alt="Dice" class="dice" id="dice-1">
+            <img src="dice-5.png" alt="Dice" class="dice" id="dice-2">
             
-            <img src="dice-5.png" alt="Dice" class="dice">
+            <form class="score-form">
+                <input type="text" name="winning-score" class="winning-score" placeholder="Enter Winning Score">
+                <span onclick="addScore()" class="submit">Submit</span>   
+            </form>
+
         </div>
         
         <script src="app.js"></script>
